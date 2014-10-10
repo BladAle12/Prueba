@@ -6,6 +6,8 @@
 
 package prueba;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author BladimirA
@@ -17,7 +19,29 @@ public class Prueba {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Prueba");
+        ArrayList<Integer> numeros = new ArrayList<>();
+        ArrayList<Alumno> als = new ArrayList<>();
+        
+        numeros.add(2);
+        numeros.add(5);
+        numeros.add(7);
+               
+        //Size
+        System.out.println("Size: " + numeros.size());
+        
+        //Sacar un elemento
+        //System.out.println(als.get(0).getNombre());
+        
+        //remover
+        numeros.remove(0);
+        
+        //recorrer
+        //for(Alumno al :als)
+        //    System.out.println(al.getNombre());
+        for(int p=0; p < numeros.size(); p++)
+            System.out.println(numeros.get(p));
+        
+        
     }
     
 }
